@@ -1,10 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+
+const TemplateContainer = styled.div`
+  margin-top: -52px;
+`
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -49,8 +54,10 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
-      <Footer />
+      <TemplateContainer>
+        {children}
+      </TemplateContainer>
+      {/* <Footer /> */}
     </div>
   )
 }

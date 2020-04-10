@@ -54,6 +54,22 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
+const Meta = ({ post }) => {
+  const origin = 'https://bestat-data.com/';
+
+  return (
+    <Helmet
+      title={`${post.frontmatter.title} | Blog`}
+      meta={[
+        { name: 'description', content: post.frontmatter.description },
+        { property: 'og:title', content: post.frontmatter.title },
+        { property: 'og:description', content: post.frontmatter.description },
+        { property: 'og:image', content: `${origin}${post.frontmatter.image}` },
+      ]}
+    />
+  );
+};
+
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
@@ -63,15 +79,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
+        helmet={Meta({post})}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
