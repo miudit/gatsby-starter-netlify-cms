@@ -142,6 +142,7 @@ export default class Index extends React.Component {
                         </label>
                         <div className="control">
                           <select
+                            className="input"
                             name={'job-type'}
                             onChange={this.handleChange}
                             id={'job-type'}
