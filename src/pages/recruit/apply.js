@@ -19,7 +19,10 @@ export default class Index extends React.Component {
   }
 
   handleAttachment = e => {
-    this.setState({ attatchment: e.target.files[0].name })
+    this.setState({ 
+      [e.target.name]: e.target.files[0],
+      attatchment: e.target.files[0].name,
+    })
   }
 
   handleSubmit = e => {
@@ -137,8 +140,7 @@ export default class Index extends React.Component {
                         <div className="control">
                           <select
                             className="input"
-                            type={'text'}
-                            name={'job-type'}
+                            name={'job-type[]'}
                             onChange={this.handleChange}
                             id={'job-type'}
                             required={true}
