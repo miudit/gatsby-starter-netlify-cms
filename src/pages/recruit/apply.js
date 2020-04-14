@@ -44,7 +44,7 @@ export default class Index extends React.Component {
           <div
             className="full-width-image-container margin-top-0 recruit-header"
             style={{
-              backgroundImage: `url('/img/68.jpg')`,
+              backgroundImage: `url('/img/background/68.jpg')`,
               boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.6)',
               backgroundPosition: `top left`,
               backgroundAttachment: `fixed`,

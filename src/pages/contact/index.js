@@ -41,8 +41,8 @@ export default class Index extends React.Component {
           style={{
             display: 'block',
             height: '100%',
-            backgroundImage: `url('/img/ben-o-bro-wpU4veNGnHg-unsplash.jpg')`,
-            boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.6)',
+            backgroundImage: `url('/img/background/ratapan-anantawat-HJV8woxmYpc-unsplash.jpg')`,
+            boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.7)',
             backgroundPosition: `top left`,
             backgroundAttachment: `fixed`,
             paddingTop: '50px',

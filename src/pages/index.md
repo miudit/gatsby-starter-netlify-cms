@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: AIで最高のユーザー体験を届ける
-image: /img/ben-o-bro-wpU4veNGnHg-unsplash.jpg
+image: /img/background/ratapan-anantawat-HJV8woxmYpc-unsplash.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:

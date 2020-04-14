@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.6)',
+        boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.7)',
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
