@@ -15,11 +15,12 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {attachment: ''}
+    this.state = {attachment: '', job_type: '深層学習エンジニア'}
   }
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
+    console.log(this.state)
   }
 
   handleAttachment = e => {
@@ -41,10 +42,6 @@ export default class Index extends React.Component {
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error))
-  }
-
-  setInitialJobType = () => {
-    this.setState({ ['job-type']: '深層学習エンジニア' })
   }
 
   render() {
@@ -141,16 +138,15 @@ export default class Index extends React.Component {
                         </div>
                       </div>
                       <div className="field">
-                        <label className="label" htmlFor={'job-type'}>
+                        <label className="label" htmlFor={'job_type'}>
                           希望職種
                         </label>
                         <div className="control">
                           <select
                             className="input"
-                            name={'job-type'}
+                            name={'job_type'}
                             onChange={this.handleChange}
-                            onLoad={this.setInitialJobType}
-                            id={'job-type'}
+                            id={'job_type'}
                             required={true}
                             defaultValue='深層学習エンジニア'
                           >
