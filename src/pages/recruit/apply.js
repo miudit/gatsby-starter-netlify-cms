@@ -145,6 +145,7 @@ export default class Index extends React.Component {
                             className="input"
                             name={'job-type'}
                             onChange={this.handleChange}
+                            onLoad={this.handleChange}
                             id={'job-type'}
                             required={true}
                           >
