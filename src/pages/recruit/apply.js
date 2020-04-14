@@ -3,9 +3,13 @@ import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
 function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+  const formData = new FormData()
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key])
+  }
+
+  return formData
 }
 
 export default class Index extends React.Component {
@@ -30,7 +34,6 @@ export default class Index extends React.Component {
     const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
