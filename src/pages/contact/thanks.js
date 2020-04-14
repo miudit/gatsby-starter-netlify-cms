@@ -9,7 +9,7 @@ export default () => (
       style={{
         display: 'block',
         height: '100%',
-        backgroundImage: `url('/img/ben-o-bro-wpU4veNGnHg-unsplash.jpg')`,
+        backgroundImage: `url('/img/background/ratapan-anantawat-HJV8woxmYpc-unsplash.jpg')`,
         boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, 0.6)',
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
