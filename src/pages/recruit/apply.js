@@ -147,10 +147,10 @@ export default class Index extends React.Component {
                             id={'job-type'}
                             required={true}
                           >
-                            <option value="depplearning" selected>深層学習エンジニア</option>
-                            <option value="backend">バックエンドエンジニア</option>
-                            <option value="biz">事業企画</option>
-                            <option value="soumu">総務</option>
+                            <option value="深層学習エンジニア" selected>深層学習エンジニア</option>
+                            <option value="バックエンドエンジニア">バックエンドエンジニア</option>
+                            <option value="事業企画">事業企画</option>
+                            <option value="総務">総務</option>
                           </select>
                         </div>
                       </div>
