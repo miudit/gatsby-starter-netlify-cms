@@ -43,6 +43,10 @@ export default class Index extends React.Component {
       .catch(error => alert(error))
   }
 
+  setInitialJobType = () => {
+    this.setState({ ['job-type']: '深層学習エンジニア' })
+  }
+
   render() {
     return (
       <Layout>
@@ -145,11 +149,12 @@ export default class Index extends React.Component {
                             className="input"
                             name={'job-type'}
                             onChange={this.handleChange}
-                            onLoad={this.handleChange}
+                            onLoad={this.setInitialJobType}
                             id={'job-type'}
                             required={true}
+                            defaultValue='深層学習エンジニア'
                           >
-                            <option value="深層学習エンジニア" selected>深層学習エンジニア</option>
+                            <option value="深層学習エンジニア">深層学習エンジニア</option>
                             <option value="バックエンドエンジニア">バックエンドエンジニア</option>
                             <option value="事業企画">事業企画</option>
                             <option value="総務">総務</option>
