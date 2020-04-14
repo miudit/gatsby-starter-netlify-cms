@@ -70,7 +70,7 @@ export default class Index extends React.Component {
                 <div className="column is-6 is-offset-3 text-black">
                   <div className="content">
                     <form
-                      name="file-upload"
+                      name="recruit"
                       method="post"
                       action="/recruit/thanks/"
                       data-netlify="true"
@@ -78,7 +78,7 @@ export default class Index extends React.Component {
                       onSubmit={this.handleSubmit}
                     >
                       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                      <input type="hidden" name="form-name" value="file-upload" />
+                      <input type="hidden" name="form-name" value="recruit" />
                       <div hidden>
                         <label>
                           Don’t fill this out:{' '}
