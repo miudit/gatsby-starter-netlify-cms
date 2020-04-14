@@ -186,23 +186,25 @@ export default class Index extends React.Component {
                         </div>
                       </div>
                       <div className="field">
-                        <label className="label">
-                          職務履歴書
-                        </label>
-                        <div className="control">
-                          <input
-                            className="file-input"
-                            type="file"
-                            name="attachment"
-                            id="resume"
-                            onChange={this.handleAttachment}
-                            required={true}
-                          />
-                          <label className="label" htmlFor={'resume'}>
-                            <span className="file-cta" style={{width: '100%'}} htmlFor={'resume'}>
-                              <span className="file-label">{this.state.attatchment ? this.state.attatchment : 'ファイルを選択'}</span>
-                            </span>
+                        <div className="file">
+                          <label className="label">
+                            職務履歴書
                           </label>
+                          <div className="control">
+                            <input
+                              className="file-input"
+                              type="file"
+                              name="attachment"
+                              id="resume"
+                              onChange={this.handleAttachment}
+                              required={true}
+                            />
+                            <label className="label" htmlFor={'resume'}>
+                              <span className="file-cta" style={{width: '100%'}} htmlFor={'resume'}>
+                                <span className="file-label">{this.state.attatchment ? this.state.attatchment : 'ファイルを選択'}</span>
+                              </span>
+                            </label>
+                          </div>
                         </div>
                       </div>
                       <div className="field">
