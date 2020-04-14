@@ -23,7 +23,7 @@ export default () => (
             <div className="column is-6 is-offset-3">
               <div className="content">
                 <h1>Thank you!</h1>
-                <p>ご連絡いただきありがとうございます。後ほど、ご入力いただいたメールアドレス宛にお返事いたします。</p>
+                <p>ご応募いただきありがとうございます。後ほど、ご入力いただいたメールアドレス宛にお返事いたします。</p>
               </div>
             </div>
           </div>
