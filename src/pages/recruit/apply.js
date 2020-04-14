@@ -142,8 +142,7 @@ export default class Index extends React.Component {
                         </label>
                         <div className="control">
                           <select
-                            className="input"
-                            name={'job-type[]'}
+                            name={'job-type'}
                             onChange={this.handleChange}
                             id={'job-type'}
                             required={true}
@@ -186,7 +185,7 @@ export default class Index extends React.Component {
                         </div>
                       </div>
                       <div className="field">
-                        <div className="file">
+                        <div className="file" style={{display: 'block'}}>
                           <label className="label">
                             職務履歴書
                           </label>
