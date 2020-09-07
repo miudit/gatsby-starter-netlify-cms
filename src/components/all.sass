@@ -40,6 +40,37 @@ section
     margin-bottom: 1.5rem
     margin-top: 0
 
+.document 
+  h1
+    font-weight: bold
+    font-size: 1.5rem
+    margin-bottom: 1rem
+  >p
+    margin-bottom: 1rem
+  .ul-first
+    list-style-type: decimal
+    >li
+      padding-left: 1em;
+      text-indent: -1em;
+      >h3
+        font-weight: bold
+      >p
+        text-indent: 0;
+        margin-left: -1rem;
+  .ul-second
+    list-style-type: lower-alpha
+    margin-bottom: 1rem
+    >li
+      padding-left: 1em;
+      text-indent: -1em;
+      >p
+        text-indent: 0;
+        margin-left: -1rem;
+  .ul-third
+    list-style-type: disc
+    >li
+      text-indent: 0;
+
 // Helper Classes
 .full-width-image-container
   width: 100vw
@@ -228,7 +259,7 @@ $menu-label-color: $white-ter
     background-size: 100vw 50vw !important;
 
   .full-width-image
-    background-position: center top !important
+    background-position: center top !important;
 
   .full-width-image-container
-    background-position: center top !important
+    background-position: center top !important;
