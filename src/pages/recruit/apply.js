@@ -151,6 +151,8 @@ export default class Index extends React.Component {
                           >
                             <option value="深層学習エンジニア">深層学習エンジニア</option>
                             <option value="バックエンドエンジニア">バックエンドエンジニア</option>
+                            <option value="アプリエンジニア">アプリエンジニア</option>
+                            <option value="フロントエンドエンジニア">フロントエンドエンジニア</option>
                             <option value="事業企画">事業企画</option>
                             <option value="総務">総務</option>
                           </select>

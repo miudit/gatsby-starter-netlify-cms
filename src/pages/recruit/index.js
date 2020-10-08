@@ -43,30 +43,52 @@ export default class RecruitIndexPage extends React.Component {
               <div className="section">
                 <div className="columns">
                   <div className="column is-6 is-offset-3 text-black">
-                    <div className="columns is-mobile select-card-style">
-                      <div className="column is-3 is-6-mobile text-black">
-                        <input type="radio" name="recruit" id="deeplearning" value="深層学習エンジニア" defaultChecked
-                          checked={this.state.activeJobType === 'deeplearning'} onChange={() => this.setState({activeJobType: 'deeplearning'})}>
-                        </input>
-                        <label class="tab_item" for="deeplearning">深層学習エンジニア</label>
+                    <div className="row is-mobile">
+                      <div className="columns is-mobile select-card-style">
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="deeplearning" value="深層学習エンジニア" defaultChecked
+                            checked={this.state.activeJobType === 'deeplearning'} onChange={() => this.setState({activeJobType: 'deeplearning'})}>
+                          </input>
+                          <label class="tab_item" for="deeplearning">深層学習エンジニア</label>
+                        </div>
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="backend" value="バックエンドエンジニア"
+                            checked={this.state.activeJobType === 'backend'} onChange={() => this.setState({activeJobType: 'backend'})}>
+                          </input>
+                          <label class="tab_item" for="backend">バックエンドエンジニア</label>
+                        </div>
                       </div>
-                      <div className="column is-3 is-6-mobile text-black">
-                        <input type="radio" name="recruit" id="backend" value="バックエンドエンジニア"
-                          checked={this.state.activeJobType === 'backend'} onChange={() => this.setState({activeJobType: 'backend'})}>
-                        </input>
-                        <label class="tab_item" for="backend">バックエンドエンジニア</label>
+                    </div>
+                    <div className="row is-mobile">
+                      <div className="columns is-mobile select-card-style">
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="application" value="アプリエンジニア" defaultChecked
+                            checked={this.state.activeJobType === 'application'} onChange={() => this.setState({activeJobType: 'application'})}>
+                          </input>
+                          <label class="tab_item" for="application">アプリエンジニア</label>
+                        </div>
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="frontend" value="フロントエンドエンジニア"
+                            checked={this.state.activeJobType === 'frontend'} onChange={() => this.setState({activeJobType: 'frontend'})}>
+                          </input>
+                          <label class="tab_item" for="frontend">フロントエンドエンジニア</label>
+                        </div>
                       </div>
-                      <div className="column is-3 is-6-mobile text-black">
-                        <input type="radio" name="recruit" id="biz" value="事業企画"
-                          checked={this.state.activeJobType === 'biz'} onChange={() => this.setState({activeJobType: 'biz'})}>
-                        </input>
-                        <label class="tab_item" for="biz">事業企画</label>
-                      </div>
-                      <div className="column is-3 is-6-mobile text-black">
-                        <input type="radio" name="recruit" id="soumu" value="総務"
-                          checked={this.state.activeJobType === 'soumu'} onChange={() => this.setState({activeJobType: 'soumu'})}>
-                        </input>
-                        <label class="tab_item" for="soumu">総務</label>
+                    </div>
+                    <div className="row is-mobile">
+                      <div className="columns is-mobile select-card-style">
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="biz" value="事業企画"
+                            checked={this.state.activeJobType === 'biz'} onChange={() => this.setState({activeJobType: 'biz'})}>
+                          </input>
+                          <label class="tab_item" for="biz">事業企画</label>
+                        </div>
+                        <div className="column is-6 is-6-mobile text-black">
+                          <input type="radio" name="recruit" id="soumu" value="総務"
+                            checked={this.state.activeJobType === 'soumu'} onChange={() => this.setState({activeJobType: 'soumu'})}>
+                          </input>
+                          <label class="tab_item" for="soumu">総務</label>
+                        </div>
                       </div>
                     </div>
                     {/* ------------------------------------------------------------------ */}
@@ -188,26 +210,168 @@ export default class RecruitIndexPage extends React.Component {
                         <ul>
                           <li>AWSのクラウドインフラ設計・構築・運用ができる方</li>
                           <li>Terraform, Ansible等を利用したInfrastracture as codeの実践経験のある方</li>
-                          <li>モニタリングツール/プロファイラーの運用経験がある方</li>
-                          <li>Linux/UNIXでのシステム設計・構築・運用経験がある方</li>
                           <li>Apacheやnginx等のWebサーバの運用経験がある方</li>
                           <li>MySQL/PostgreSQL等のリレーショナルデータベースの運用経験がある方</li>
-                          <li>Java, Python, Ruby, Go等を利用したAPI開発の経験がある方</li>
+                          <li>Java, Go等を利用したAPI開発の経験がある方</li>
                           <li>セキュリティを意識した設計・開発ができる方</li>
                           <li>Git等のバージョン管理システムを利用した開発経験のある方</li>
-                          <li>ECS, Kubernetes等のコンテナクラスターの設計・構築・運用経験がある方</li>
-                          <li>テストコードが記述できる方</li>
-                          <li>Jenkins, CircleCI等のCI/CDツールの利用経験がある方</li>
                         </ul>
                       </div>
                       <div className="content">
                         <h4>歓迎スキル</h4>
-                        <li>Linuxカーネルのチューニング経験がある方</li>
-                        <li>HTML/CSS/JavaScriptに関する基礎的な知識のある方</li>
+                        <li>Kubernetes等のコンテナクラスターの設計・構築・運用経験がある方</li>
+                        <li>gRPCを用いたAPIの開発経験がある方</li>
+                        <li>モニタリングツール/プロファイラーの運用経験がある方</li>
                         <li>エラーバジェットやポストモーテム等のSREを取り入れた運用経験がある方</li>
-                        <li>WebRTCネイティブクライアントを利用したシステム開発の経験がある方</li>
                         <li>CUDA等のGPU関係の運用、保守が出来る方</li>
-                        <li>WebRTCなどのP2P通信をひとりで実装、運用できる方</li>
+                        <li>Jenkins, CircleCI等のCI/CDツールの利用経験がある方</li>
+                      </div>
+                      <div className="content">
+                        <h4>雇用形態</h4>
+                        <p>
+                          正社員（※契約社員スタートの場合もあります）
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>給与</h4>
+                        <p>
+                          年俸制、業績連動型（経験・能力を考慮の上、当社規定により決定します）
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>勤務時間</h4>
+                        <p>
+                          10時～19時（途中休憩1時間） 出社時間は8-11時で自由に選べます
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>休日休暇</h4>
+                        <p>
+                        完全週休2日制（土曜・日曜）、祝日、夏期休暇（7月1日～11月30日までの期間に3日間）、年末年始休暇（12月28日～1月4日）、年次有給休暇（初年度10日間）、慶弔休暇、誕生日休暇
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>各種保険</h4>
+                        <ul>
+                          <li>雇用保険、社会保険</li>
+                          <li>福利厚生（研修費、食事手当）</li>
+                          <li>入社研修プログラム、学会参加勉強会参加サポート制度、家賃補助制度（2駅ルール）、引越手当、子ども手当</li>
+                          <li>※学会参加勉強会参加サポート制度、家賃補助制度（2駅ルール）、引越手当、子ども手当は正社員のみ</li>
+                        </ul>
+                      </div>
+                    </div>
+                    }
+                    {/* ------------------------------------------------------------------ */}
+                    { this.state.activeJobType === 'application' && 
+                    <div class="job-description application">
+                      <h3 className="has-text-weight-semibold is-size-4">アプリエンジニア</h3>
+                      <div className="columns">
+                        <div className="column is-12 has-text-centered">
+                          <Link className="btn" to="/recruit/apply">
+                            <div>応募する</div>
+                          </Link>
+                        </div>
+                      </div>
+                      <p>画像系AIサービスを支えるアプリ開発のリードエンジニア募集！</p>
+                      <div className="content">
+                        <h4>募集概要</h4>
+                        <p>
+                          画像系AIサービスの本格的サービスローンチに向けて、フルコミットでアプリ開発をリードするエンジニアを募集しています。
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>応募資格</h4>
+                        <ul>
+                          <li>優れたプログラミング能力を有すること</li>
+                          <li>機械学習/深層学習に関連する理解がある程度あることが望ましい（無い場合は、研修制度あり）</li>
+                        </ul>
+                      </div>
+                      <div className="content">
+                        <h4>必須スキル</h4>
+                        <ul>
+                          <li>iOS/Androidのアプリ開発、リリース、および運用経験のある方</li>
+                          <li>データベースに関する基礎的な知識のある方</li>
+                          <li>Git等のバージョン管理システムを利用した開発経験のある方</li>
+                        </ul>
+                      </div>
+                      <div className="content">
+                        <h4>歓迎スキル</h4>
+                        <li>Flutterアプリの開発経験がある方</li>
+                        <li>Firebaseを導入したアプリの開発経験</li>
+                      </div>
+                      <div className="content">
+                        <h4>雇用形態</h4>
+                        <p>
+                          正社員（※契約社員スタートの場合もあります）
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>給与</h4>
+                        <p>
+                          年俸制、業績連動型（経験・能力を考慮の上、当社規定により決定します）
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>勤務時間</h4>
+                        <p>
+                          10時～19時（途中休憩1時間） 出社時間は8-11時で自由に選べます
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>休日休暇</h4>
+                        <p>
+                        完全週休2日制（土曜・日曜）、祝日、夏期休暇（7月1日～11月30日までの期間に3日間）、年末年始休暇（12月28日～1月4日）、年次有給休暇（初年度10日間）、慶弔休暇、誕生日休暇
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>各種保険</h4>
+                        <ul>
+                          <li>雇用保険、社会保険</li>
+                          <li>福利厚生（研修費、食事手当）</li>
+                          <li>入社研修プログラム、学会参加勉強会参加サポート制度、家賃補助制度（2駅ルール）、引越手当、子ども手当</li>
+                          <li>※学会参加勉強会参加サポート制度、家賃補助制度（2駅ルール）、引越手当、子ども手当は正社員のみ</li>
+                        </ul>
+                      </div>
+                    </div>
+                    }
+                    {/* ------------------------------------------------------------------ */}
+                    { this.state.activeJobType === 'frontend' && 
+                    <div class="job-description frontend">
+                      <h3 className="has-text-weight-semibold is-size-4">フロントエンドエンジニア</h3>
+                      <div className="columns">
+                        <div className="column is-12 has-text-centered">
+                          <Link className="btn" to="/recruit/apply">
+                            <div>応募する</div>
+                          </Link>
+                        </div>
+                      </div>
+                      <p>画像系AIサービスを支えるフロントエンド開発のリードエンジニア募集！</p>
+                      <div className="content">
+                        <h4>募集概要</h4>
+                        <p>
+                          画像系AIサービスの本格的サービスローンチに向けて、フルコミットでフロントエンド開発をリードするエンジニアを募集しています。
+                        </p>
+                      </div>
+                      <div className="content">
+                        <h4>応募資格</h4>
+                        <ul>
+                          <li>優れたプログラミング能力を有すること</li>
+                          <li>機械学習/深層学習に関連する理解がある程度あることが望ましい（無い場合は、研修制度あり）</li>
+                        </ul>
+                      </div>
+                      <div className="content">
+                        <h4>必須スキル</h4>
+                        <ul>
+                          <li>React/Vue.js等を利用したWebアプリ開発、リリース、および運用経験のある方</li>
+                          <li>データベースに関する基礎的な知識のある方</li>
+                          <li>UI/UXを意識した開発のできる方</li>
+                          <li>Git等のバージョン管理システムを利用した開発経験のある方</li>
+                        </ul>
+                      </div>
+                      <div className="content">
+                        <h4>歓迎スキル</h4>
+                        <li>REST APIの開発経験のある方</li>
+                        <li>AWSのクラウドインフラ構築に関する基礎的な知識のある方</li>
                       </div>
                       <div className="content">
                         <h4>雇用形態</h4>
