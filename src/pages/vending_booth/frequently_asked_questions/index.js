@@ -26,9 +26,14 @@ export default class Index extends React.Component {
               <div className="column is-6 is-offset-3">
                 <div className="document">
                   <h1>よくある質問</h1>
-                  <p>
-                    現在準備中です。
-                  </p>
+                  <div className="faq">
+                    <div className="question">
+                      Q：予約をキャンセルしたいのですが、どうすればいいですか？
+                    </div>
+                    <div className="answer">
+                      A：キャンセル期限が過ぎた商品のキャンセルはお受けできません。キャンセルが可能な商品については、受け取り画面より商品を選択し、注文をキャンセルしてください。
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
