@@ -233,6 +233,21 @@ $menu-label-color: $white-ter
 .label
   font-weight: normal !important;
 
+.faq
+  .faq-content
+    margin-bottom: 20px;
+  .question
+    display: flex
+    font-weight: bold;
+    font-size: 20px;
+  .answer
+    display: flex
+    font-size: 20px;
+  dt::before
+    content: "Q.  ";
+  dd::before
+    content: "A.  ";
+
 @import "~bulma"
 
 
