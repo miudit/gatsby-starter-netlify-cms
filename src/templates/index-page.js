@@ -86,6 +86,7 @@ export const IndexPageTemplate = ({
                       <div>画像AIのエンジン開発・提供</div>
                       <div>画像AIのSaasとデバイスの提供</div>
                       <div>監視カメラ用画像AIの開発・提供</div>
+                      <div>リモート管理システムを使った小売業</div>
                     </div>
                   </div>
                 </div>
@@ -154,7 +155,6 @@ export const IndexPageTemplate = ({
                     <div className="is-parent member-cell column is-4">
                       <img
                         src="/img/members/miura.jpg"
-                        alt="Kaldi"
                         style={{ width: '7em', height: '7em', borderRadius: '4px' }}
                       />
                       <div
@@ -162,6 +162,19 @@ export const IndexPageTemplate = ({
                         <div>三浦大地 / エンジニア</div>
                         <div className="member-intro">
                           LINE株式会社を経てbestat株式会社に参画
+                        </div>
+                      </div>
+                    </div>
+                    <div className="is-parent member-cell column is-4">
+                      <img
+                        src="/img/members/akita.jpg"
+                        style={{ width: '7em', height: '7em', borderRadius: '4px' }}
+                      />
+                      <div
+                        style={{width: '100%', padding: '0px 20px'}}>
+                        <div>秋田優輝</div>
+                        <div className="member-intro">
+                          IBM/マッキンゼー/フィットネス事業の起業を経て、bestat株式会社に参画
                         </div>
                       </div>
                     </div>
