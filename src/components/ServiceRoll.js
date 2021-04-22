@@ -67,7 +67,7 @@ class ServiceRoll extends React.Component {
         >
           <div className="column is-6 is-12-mobile">
             <img
-                src="/img/services/service2.png"
+                src="/img/services/service2.jpg"
                 alt="画像AIの受託開発"
             />
           </div>
