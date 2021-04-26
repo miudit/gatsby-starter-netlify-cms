@@ -13,10 +13,16 @@ class ServiceRoll extends React.Component {
         <div className="columns desktop-hidden">
           <div className="column is-6 is-12-mobile">
             <h3>無人販売ブースの展開</h3>
-            <img
-                src="/img/services/service1.png"
+            <div className="slide">
+              <img
+                src="/img/services/service1_1.jpg"
                 alt="無人販売ブースの展開"
-            />
+              />
+              <img
+                src="/img/services/service1_2.jpg"
+                alt="無人販売ブースの展開"
+              />
+            </div>
           </div>
           <div className="column is-6">
             <p>
@@ -38,10 +44,16 @@ class ServiceRoll extends React.Component {
             </p>
           </div>
           <div className="column is-6 is-12-mobile">
-            <img
-                src="/img/services/service1.png"
+            <div className="slide">
+              <img
+                src="/img/services/service1_1.jpg"
                 alt="無人販売ブースの展開"
-            />
+              />
+              <img
+                src="/img/services/service1_2.jpg"
+                alt="無人販売ブースの展開"
+              />
+            </div>
           </div>
         </div>
         <div 
