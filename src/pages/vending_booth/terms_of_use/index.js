@@ -8,6 +8,8 @@ export default class Index extends React.Component {
   }
 
   render() {
+    window.location.href = 'https://www.notion.so/c479ce7c83974ad5a9198bc86ec645f1'; 
+    return null;
     return (
       <div
           className=""
