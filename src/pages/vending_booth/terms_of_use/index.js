@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../../components/Layout'
 
@@ -7,8 +7,11 @@ export default class Index extends React.Component {
     super(props)
   }
 
+  componentDidMount() {
+    window.location.replace('https://www.notion.so/c479ce7c83974ad5a9198bc86ec645f1');
+  }
+
   render() {
-    window.location.href = 'https://www.notion.so/c479ce7c83974ad5a9198bc86ec645f1'; 
     return null;
     return (
       <div
