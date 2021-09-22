@@ -127,7 +127,7 @@ export const IndexPageTemplate = ({
                         style={{width: '100%', padding: '0px 20px'}}>
                         <div>三浦大地 / ソフトウェアエンジニア</div>
                         <div className="member-intro">
-                          LINE株式会社を経てbestatに参画
+                          LINE株式会社を経てbestatに参画<br></br>
                           松江高専、筑波大情報科学類卒
                         </div>
                       </div>
@@ -141,7 +141,7 @@ export const IndexPageTemplate = ({
                         style={{width: '100%', padding: '0px 20px'}}>
                         <div>大橋　良右 / 深層学習・機械学習エンジニア</div>
                         <div className="member-intro">
-                          ラティス・テクノロジーを経てbestatに参画
+                          ラティス・テクノロジーを経てbestatに参画<br></br>
                           東大　数学科修士
                         </div>
                       </div>
@@ -155,7 +155,7 @@ export const IndexPageTemplate = ({
                         style={{width: '100%', padding: '0px 20px'}}>
                         <div>秋田優輝</div>
                         <div className="member-intro">
-                          IBM/マッキンゼー/フィットネス事業の起業を経て、bestatに参画
+                          IBM/マッキンゼー/フィットネス事業の起業を経て、bestatに参画<br></br>
                           慶応経済学部卒
                         </div>
                       </div>
@@ -169,7 +169,7 @@ export const IndexPageTemplate = ({
                         style={{width: '100%', padding: '0px 20px'}}>
                         <div>佐々木　竹充 / ソフトウェアエンジニア</div>
                         <div className="member-intro">
-                          GREE、Mixiを経てbestatに参画
+                          GREE、Mixiを経てbestatに参画<br></br>
                           東京理科大　情報工学修士
                         </div>
                       </div>
