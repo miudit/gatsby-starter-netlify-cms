@@ -77,16 +77,11 @@ export const IndexPageTemplate = ({
                     <div className="column is-3">松田尚子</div>
                   </div>
                   <div className="columns">
-                    <div className="column is-3 is-offset-3 bold">技術顧問</div>
-                    <div className="column is-3">松尾豊 東京大学工学系研究科 教授</div>
-                  </div>
-                  <div className="columns">
                     <div className="column is-3 is-offset-3 bold">事業内容</div>
                     <div className="column is-3">
-                      <div>画像AIのエンジン開発・提供</div>
-                      <div>画像AIのSaasとデバイスの提供</div>
-                      <div>監視カメラ用画像AIの開発・提供</div>
-                      <div>リモート管理システムを使った小売業</div>
+                      <div>工場用ソフトウェア提供</div>
+                      <div>店舗用ソフトウェア提供</div>
+                      <div>画像AIとIoTを用いたサービスの開発・提供</div>
                     </div>
                   </div>
                 </div>
