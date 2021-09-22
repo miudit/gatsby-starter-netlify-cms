@@ -99,15 +99,14 @@ export const IndexPageTemplate = ({
                   <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
-                        Members
+                        Team
                       </h3>
                     </div>
                   </div>
                   <div className="columns is-multiline">
                     <div className="is-parent member-cell column is-4">
                       <img
-                        src="/img/members/matsuda.jpg"
-                        alt="Kaldi"
+                        src="/img/members/matsuda.jpeg"
                         style={{ width: '7em', height: '7em', borderRadius: '4px' }}
                       />
                       <div
@@ -115,33 +114,74 @@ export const IndexPageTemplate = ({
                         <div>松田尚子 / 代表取締役</div>
                         <div className="member-intro">
                           経済産業省/RIETIを経て、bestat株式会社を創業<br></br>
-                          東京大学工学博士(工学系研究科 松尾豊研究室所属)
+                          東大工学博士(松尾豊研究室)
                         </div>
                       </div>
                     </div>
                     <div className="is-parent member-cell column is-4">
                       <img
-                        src="/img/members/matsuo_3.jpg"
-                        alt="Kaldi"
+                        src="/img/members/miura.jpeg"
                         style={{ width: '7em', height: '7em', borderRadius: '4px' }}
                       />
                       <div
                         style={{width: '100%', padding: '0px 20px'}}>
-                        <div>松尾豊 / 技術顧問</div>
+                        <div>三浦大地 / ソフトウェアエンジニア</div>
                         <div className="member-intro">
-                          東京大学工学系研究科 教授
+                          LINE株式会社を経てbestatに参画
+                          松江高専、筑波大情報科学類卒
                         </div>
                       </div>
                     </div>
                     <div className="is-parent member-cell column is-4">
                       <img
-                        src="/img/members/doi.jpg"
-                        alt="Kaldi"
+                        src="/img/members/ohashi.jpeg"
                         style={{ width: '7em', height: '7em', borderRadius: '4px' }}
                       />
                       <div
                         style={{width: '100%', padding: '0px 20px'}}>
-                        <div>土居 健人 / エンジニア</div>
+                        <div>大橋　良右 / 深層学習・機械学習エンジニア</div>
+                        <div className="member-intro">
+                          ラティス・テクノロジーを経てbestatに参画
+                          東大　数学科修士
+                        </div>
+                      </div>
+                    </div>
+                    <div className="is-parent member-cell column is-4">
+                      <img
+                        src="/img/members/akita.jpeg"
+                        style={{ width: '7em', height: '7em', borderRadius: '4px' }}
+                      />
+                      <div
+                        style={{width: '100%', padding: '0px 20px'}}>
+                        <div>秋田優輝</div>
+                        <div className="member-intro">
+                          IBM/マッキンゼー/フィットネス事業の起業を経て、bestatに参画
+                          慶応経済学部卒
+                        </div>
+                      </div>
+                    </div>
+                    <div className="is-parent member-cell column is-4">
+                      <img
+                        src="/img/members/sasaki.jpeg"
+                        style={{ width: '7em', height: '7em', borderRadius: '4px' }}
+                      />
+                      <div
+                        style={{width: '100%', padding: '0px 20px'}}>
+                        <div>佐々木　竹充 / ソフトウェアエンジニア</div>
+                        <div className="member-intro">
+                          GREE、Mixiを経てbestatに参画
+                          東京理科大　情報工学修士
+                        </div>
+                      </div>
+                    </div>
+                    <div className="is-parent member-cell column is-4">
+                      <img
+                        src="/img/members/doi.jpeg"
+                        style={{ width: '7em', height: '7em', borderRadius: '4px' }}
+                      />
+                      <div
+                        style={{width: '100%', padding: '0px 20px'}}>
+                        <div>土居 健人 / 深層学習エンジニア</div>
                         <div className="member-intro">
                           東大工学系研究科博士課程在学中（松尾研究室）
                         </div>
@@ -149,27 +189,14 @@ export const IndexPageTemplate = ({
                     </div>
                     <div className="is-parent member-cell column is-4">
                       <img
-                        src="/img/members/miura.jpg"
+                        src="/img/members/matsuo_3.jpg"
                         style={{ width: '7em', height: '7em', borderRadius: '4px' }}
                       />
                       <div
                         style={{width: '100%', padding: '0px 20px'}}>
-                        <div>三浦大地 / エンジニア</div>
+                        <div>松尾豊 / 技術顧問</div>
                         <div className="member-intro">
-                          LINE株式会社を経てbestat株式会社に参画
-                        </div>
-                      </div>
-                    </div>
-                    <div className="is-parent member-cell column is-4">
-                      <img
-                        src="/img/members/akita.jpg"
-                        style={{ width: '7em', height: '7em', borderRadius: '4px' }}
-                      />
-                      <div
-                        style={{width: '100%', padding: '0px 20px'}}>
-                        <div>秋田優輝</div>
-                        <div className="member-intro">
-                          IBM/マッキンゼー/フィットネス事業の起業を経て、bestat株式会社に参画
+                          東京大学工学系研究科 教授
                         </div>
                       </div>
                     </div>
