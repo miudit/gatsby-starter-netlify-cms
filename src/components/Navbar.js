@@ -72,9 +72,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/services">
                 Services
               </Link>
-              <Link className="navbar-item" to="https://trapezoidal-truffle-02b.notion.site/529b32e78a3b429e982a7b3296f12eba">
+              <a className="navbar-item" href="https://trapezoidal-truffle-02b.notion.site/529b32e78a3b429e982a7b3296f12eba">
                 News
-              </Link>
+              </a>
               <Link className="navbar-item" to="/recruit">
                 Recruit
               </Link>
